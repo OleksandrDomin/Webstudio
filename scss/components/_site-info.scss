@@ -1,0 +1,50 @@
+
+
+.info__link 
+{
+
+     
+        
+
+    font-size: 12px;
+    font-weight: 500;
+    
+    color: var(--text-articl-color);
+    letter-spacing: 0.02em;
+
+    line-height: 1.16;
+   
+    font-style: normal;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--t-timing-f);
+
+        &:hover,
+        &:active,
+        &:focus 
+        {
+            color: var(--hover-color);
+        }
+
+@media screen and (min-width: 1200px) {
+display: flex;
+align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.14;
+}
+  
+}
+
+.info__icon 
+{fill: currentColor;
+    @media screen and (min-width: 1200px) {
+    
+             margin-right: 10px;
+        }
+   
+    
+}
+

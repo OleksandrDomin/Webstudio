@@ -1,0 +1,25 @@
+
+.work-card__thumb {
+    position: relative;
+}
+
+.work-card__text {
+    position: absolute;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    width: 100%;
+
+    background-color: var(--bgc-works);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.87;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-cololr);
+}

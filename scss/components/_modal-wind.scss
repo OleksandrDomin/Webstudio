@@ -1,0 +1,68 @@
+.modal 
+{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    max-width: 450px;
+
+    padding: 40px;
+
+    background-color: var(--white-cololr);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform var(--transition-duration) var(--t-timing-f);
+
+    @media screen and (min-width: 1200px) {
+            max-width: 528px;
+        }
+}
+
+.modal__title 
+{
+    display: block;
+    margin-bottom: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-title-color);
+
+@media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
+
+}
+
+.modal__user-input 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.modal__contract-terms 
+{
+    margin-bottom: 31px;
+
+    @media (min-width: 1200px) {
+        margin-bottom: 30px;
+        }
+}
+
+.modal__button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0%;
+    text-align: center;
+}

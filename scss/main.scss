@@ -1,0 +1,69 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './base/reset';
+@import './base/img-rule';
+/**Backdrop*/
+@import './utils/backdrop';
+/*Hidden*/
+@import './utils/hiddens-elements';
+/*Mixins*/
+@import './utils/mixins';
+
+
+/*Body*/
+@import './layout/body';
+/**Header*/
+@import './layout/page-header';
+/*Hero*/
+@import './layout/hero';
+
+
+
+/*our benefits section*/
+@import './layout/benefits';
+/*our works section*/
+@import './layout/work-section';
+/*Team section*/
+@import './layout/team-secrion';
+/*Clients section*/
+@import './layout/clients-setion';
+/*Footer*/
+@import './layout/page-footer';
+/*Social-network*/
+@import './layout/social-network';
+/*Portfolio page**/
+@import './layout/portfolio';
+/*Examples of works*/
+@import './layout/examples';
+
+
+/*Container*/
+@import './components/container';
+/*Flex-centr*/
+@import './components/flex-centr';
+/*logo*/
+@import './components/logo';
+/*Button*/
+@import './components/button';
+@import './components/work-card';
+@import './components/team-card';
+@import './components/team-icon';
+@import './components/client-card';
+@import './components/button-icon';
+@import './components/social-icon';
+@import './components/address';
+@import './components/subscribe-form';
+/*Sorting btn*/
+@import './components/btn-group';
+@import './components/examples-card.scss';
+@import './components/btn-modal--close';
+@import './components/contract-terms';
+@import './components/user-comment-form';
+@import './components/user-form';
+@import './components/modal-wind';
+/*Site-info*/
+@import './components/site-info';
+/*Site-Navigation*/
+@import './components/site-navigation';
+
+

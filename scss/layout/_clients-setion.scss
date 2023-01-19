@@ -1,0 +1,42 @@
+.clients-section {
+    padding: 60px 0;
+
+    @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+
+}
+
+.clients-section__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-title-color);
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+            font-size: 36px;
+                line-height: 1.16;
+                margin-bottom: 50px;
+}
+}
+
+.clients-section__list {
+    display: flex;
+    justify-content: center;
+  
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    /*@media and (min-width: 1200px)
+    {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    gap: 30px;
+}*/
+    }

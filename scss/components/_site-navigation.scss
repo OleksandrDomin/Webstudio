@@ -1,0 +1,63 @@
+.nav__list {
+  
+    display: none;
+ 
+
+    
+    @media screen and (min-width: 768px) 
+    {
+   
+    display: flex;
+    padding-left: 0;
+    gap: 51px;
+    }
+    @media screen and (min-width: 1200px) {
+             gap: 50px;
+         }
+}
+
+.nav__link {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--text-title-color);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--t-timing-f);
+
+    &:hover,
+    &:active,
+    &:focus 
+    {
+        color: var(--hover-color);
+    }
+}
+
+/*Подсветка страницы на которой находимся*/
+
+.nav__link--current {
+    color: var(--hover-color);
+
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #2196F3;
+        border-radius: 2px;
+    }
+}
+
+.nav__box
+{
+    display: flex;
+}

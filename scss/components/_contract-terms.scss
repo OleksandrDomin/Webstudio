@@ -1,0 +1,75 @@
+.contract-terms__labl {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-left: 27px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    color: var(--text-articl-color);
+
+    @media (min-width: 1200px) {
+            padding-left: 20px;
+            font-size: 14px;
+            line-height: 1.71;
+        }
+}
+
+.contract-terms__checkbox 
+{
+    appearance: none;
+
+        &:focus~.contract-terms__icon,
+        &:active~.contract-terms__icon,
+        &:hover~.contract-terms__icon {
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border: 2px solid #212121;
+        }
+
+        &:checked~.contract-terms__icon 
+        {
+            background-color: var(--hover-color);
+            background-origin: border-box;
+            border-color: var(--hover-color);
+        }
+}
+
+.contract-terms__link {
+    color: var(--hover-color);
+    text-decoration-skip-ink: none;
+    transition: color var(--transition-duration) var(--t-timing-f);
+
+        &:hover,
+        &:focus,
+        &:active 
+        {
+            color: var(--btn-hover-color);
+        }
+}
+
+.contract-terms__icon {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+
+    transform: translateY(-50%);
+    width: 16px;
+    height: 15px;
+
+
+    background: var(--white-cololr);
+    border-radius: 2px;
+    border: 1.5px solid #212121;
+    fill: var(--white-cololr);
+
+        transition: background-color var(--transition-duration) var(--t-timing-f),
+        border-radius var(--transition-duration) var(--t-timing-f),
+        border var(--transition-duration) var(--t-timing-f),
+        fill var(--transition-duration) var(--t-timing-f);
+}

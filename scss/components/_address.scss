@@ -1,0 +1,48 @@
+.address {
+    margin-top: 20px;
+}
+
+.address__list {
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding-left: 0;
+    
+    @media screen and (min-width: 1200px){
+        margin-bottom: 0;
+    /*display: flex;
+    flex-direction: column;
+    gap: 9px;*/
+    
+    }
+    
+}
+
+.address__item
+{
+    margin-bottom: 8px;
+@media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
+    
+}
+
+.address-map {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--white-cololr);
+    font-style: normal;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--t-timing-f);
+
+        &:hover,
+        &:active,
+        &:focus 
+            {
+            color: var(--hover-color);
+            }
+}
+
