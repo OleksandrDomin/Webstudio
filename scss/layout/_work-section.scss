@@ -1,12 +1,15 @@
 .work-section
 {
         display: none;
+        @media screen and (min-width: 1200px) {
+                display: block;
+            }
 }
 
 
 .work-section__title {
 
-   /* @media  and (min-width: 1200px) {
+   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
     text-align: center;
     font-weight: 700;
@@ -14,17 +17,14 @@
     line-height: 1.16;
     color: var(--text-title-color);
     letter-spacing: 0.03em;
-    }*/
-
-
+    }
 }
 
 .work-section__list {
-
-   /* @media and (min-width: 1200px) {
-         display: flex;
+   @media screen and (min-width: 1200px) {
+    display: flex;
     padding-bottom: 94px;
     gap: 30px;
-    }*/
+    }
    
 }

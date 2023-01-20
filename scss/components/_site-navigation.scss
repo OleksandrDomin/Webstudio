@@ -1,6 +1,15 @@
+.nav__item
+{
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+        margin: 0;
+
+        }
+}
+
 .nav__list {
   
-    display: none;
+    //display: none;
  
 
     
@@ -17,14 +26,27 @@
 }
 
 .nav__link {
-    position: relative;
-    display: block;
+
+    font-family: inherit;
+    font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--text-title-color);
+    font-size: 40px;
+    line-height: 1.17;
+    text-align: center;
     letter-spacing: 0.02em;
+color: var(--text-title-color);
     text-decoration: none;
+
+   
+@media screen and (min-width: 768px) {
+        font-size: 14px;
+         line-height: 1.14;
+        //position: relative;
+    //font-weight: 500;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    }
 
     transition-property: color;
     transition-duration: var(--transition-duration);
@@ -40,8 +62,12 @@
 
 /*Подсветка страницы на которой находимся*/
 
-.nav__link--current {
-    color: var(--hover-color);
+/*.nav__link--current {
+
+   
+@media screen and (min-width: 767px) {
+           position: absolute; 
+           color: var(--hover-color);
 
 
     &::after {
@@ -56,6 +82,9 @@
         border-radius: 2px;
     }
 }
+    }*/
+
+
 
 .nav__box
 {

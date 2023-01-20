@@ -5,12 +5,30 @@
 }
 
 .footer-block {
-    text-align: center;
+text-align: center;
+
 @media screen and (min-width: 1200px) {
      display: flex;
     align-items: baseline;
+    text-align: start;
 }
    
+}
+
+.footer__block
+{
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 165px;
+        }
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+
+}
+
 }
 
 .footer__address--font {
@@ -25,20 +43,18 @@ margin-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
              margin-left: 70px;
+             margin-bottom: 0;
         }
-   
 }
 
 .footer__subscribe 
 {
 @media screen and (min-width: 1200px) {
         margin-left: 93px;
-    }
-    
+        }
 }
 
 .footer-title {
-
 
     margin-bottom: 20px;
     font-family: 'Roboto';

@@ -5,7 +5,7 @@
     height: 92px;
     margin: 15px;
 
-    &:nth-child(-n+2)
+    /*&:nth-child(-n+2)
     {
         margin-top: 0;
     }
@@ -13,11 +13,12 @@
     &:nth-last-child(-n+2)
     {
         margin-bottom: 0;
+    }*/
 
-        @media scree and (min-width: 1200px) {
+    @media scree and (min-width: 1200px) {
                 width: 170px;
+              
             }
-    }
 }
 
 
