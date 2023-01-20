@@ -19,11 +19,22 @@
     width: calc((100%/2) - 2*15px);
     flex-basis: 345px;
     margin: 15px;
+
+    &:nth-child(-n+2)
+    {
+        margin-top: 0;
+    }
+
+        &:nth-child(n+2) {
+            margin-bottom: 0;
+        }
    
  }
 
     @media (min-width: 1200px) {
           max-width: 270px;  
+          margin-top: 0;
+          margin-bottom: 0;
         }
 }
 
