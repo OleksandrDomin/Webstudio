@@ -1,13 +1,20 @@
+.subscribe
+{
+    @media screen and (min-width: 1200px) {
+           display: flex;
+        }
+    
+}
 .subscribe-form 
 {
     @media screen and (min-width: 1200px) {
-          
+          display: flex;
         }
 }
 
 .subscribe-form__area 
 {
-    max-width: 480px;
+    max-width: 450px;
     width: 100%;
     height: auto;
     background-color: inherit;
@@ -43,6 +50,4 @@
     margin-bottom: 0;
 margin-left: 12px;
     }
-    
-    
 }

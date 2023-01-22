@@ -1,84 +1,48 @@
 .header {
-
-    padding: 16px 15px;
     border-bottom: 1px solid var(--header-border);
+}
 
-   @media screen and (min-width: 768px){
-    padding: 0;
-    
-   }        
+.header__thumb
+{
+    padding: 15px 0;
+    position: relative;
 }
 
 .header__logo {
-
-    @media screen and (min-width: 768px)
-    {
-     margin-right: 88px;
-    }
-   
-    @media screen and (min-width: 1200px) 
-    {
     margin-right: 93px;
-    }
+
 }
 
 .header__link {
-    
-
-
-    @media screen and (min-width: 1200px){
-        
     padding-top: 32px;
     padding-bottom: 32px;
-    }
-    
 }
 
 .header__nav {
+display: none;
 
-   position: relative;
-    margin-bottom: 306px;
+    @media screen and (min-width: 768px) {
+        display: flex;
     margin-top: 0;
-    padding: 0;
-
-    @media screen and (min-width: 768px) 
-        {
     margin-bottom: 0;
-
-
-        justify-content: center;
-        }
-
-
+    }
 }
 
 .header__info {
 
-padding: 0;
-margin-bottom: 64px;
+display: none;
 
 @media screen and (min-width: 768px) {
-        
-        margin-left: 96px;
-        margin: 0;
-    }
+display: block;
+padding: 0%;
+margin-left: 90px;
+        }
 
-   @media screen and (min-width: 1200px)
-   {
+    @media screen and (min-width: 1200px) {
     display: flex;
-   flex-direction: row-reverse;
-   gap: 30px;
+    gap: 30px;
     padding: 0;
     margin: 0;
-  
-   }
-}
-
-.header__box
-{
-    @media screen and (min-width: 768px) {
-   display: flex;
-  justify-content: center;
-  align-items: center;
-        }
+    margin-left: auto;
+    }
 }

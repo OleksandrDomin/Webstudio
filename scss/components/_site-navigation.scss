@@ -1,44 +1,20 @@
-.nav__item
-{
-    margin-bottom: 32px;
-    @media screen and (min-width: 768px) {
-        margin: 0;
-        }
-}
-
 .nav__list {
-  
-    @media screen and (min-width: 768px) 
-    {
-    display: flex;
     padding-left: 0;
-    gap: 51px;
-    }
-    @media screen and (min-width: 1200px) {
-             gap: 50px;
-         }
+    gap: 50px;
 }
 
 .nav__link {
+    position: relative;
+    display: block;
 
-    font-family: inherit;
-    font-style: normal;
+    padding: 32px 0;
+
     font-weight: 500;
-    font-size: 40px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.02em;
-color: var(--text-title-color);
-    text-decoration: none;
-
-   
-@media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.14;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    }
+    color: var(--text-title-color);
+    letter-spacing: 0.02em;
+    text-decoration: none;
 
     transition-property: color;
     transition-duration: var(--transition-duration);
@@ -46,20 +22,17 @@ color: var(--text-title-color);
 
     &:hover,
     &:active,
-    &:focus 
-    {
+    &:focus {
         color: var(--hover-color);
     }
+
+
 }
 
 /*Подсветка страницы на которой находимся*/
 
 .nav__link--current {
-
-   
-@media screen and (min-width: 767px) {
-           position: absolute; 
-           color: var(--hover-color);
+    color: var(--hover-color);
 
 
     &::after {
@@ -73,10 +46,4 @@ color: var(--text-title-color);
         background: #2196F3;
         border-radius: 2px;
     }
-}
-}
-
-.nav__box
-{
-    display: flex;
 }

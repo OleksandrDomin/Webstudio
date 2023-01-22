@@ -17,8 +17,7 @@
  @media (min-width: 768px) 
  {
     width: calc((100%/2) - 2*15px);
-    flex-basis: 345px;
-    margin: 15px;
+    max-width: 345px;
 
     &:nth-child(-n+2)
     {
@@ -35,6 +34,7 @@
           max-width: 270px;  
           margin-top: 0;
           margin-bottom: 0;
+          
         }
 }
 

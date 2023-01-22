@@ -1,32 +1,26 @@
-.address {
-    margin-top: 20px;
-}
 
 .address__list {
-    margin-top: 0;
-    margin-bottom: 60px;
+margin: 20px 0 0;
     padding-left: 0;
-    
-    @media screen and (min-width: 1200px){
-        margin-bottom: 0;
-    
-    }
-    
 }
 
 .address__item
 {
+   
     margin-bottom: 8px;
 @media screen and (min-width: 1200px) {
-        margin-bottom: 9px;
+        &:not(:last-child)
+    {
+       margin-bottom: 9px; 
+    } 
     }
-    
 }
 
 .address-map {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     color: var(--white-cololr);
     font-style: normal;
     text-decoration: none;
@@ -43,3 +37,24 @@
             }
 }
 
+.address-mail__link, .address-tel__link
+{
+font-family: inherit;
+font-weight: 400;
+font-size: 14px;
+letter-spacing: 0.03em;
+line-height: 1.71;
+color: var(--info-footer-color);
+font-style: normal;
+text-decoration: none;
+
+transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--t-timing-f);
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: var(--hover-color);
+}
+}

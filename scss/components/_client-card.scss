@@ -1,19 +1,19 @@
 .clients-card {
-    
-    max-width: calc((100%/2) - 2*15px);
-    width: 210px;
+    width: calc((100%/2) - 2*15px);
+    max-width: 210px;
     height: 92px;
-    margin: 15px;
 
+    @media screen and (min-width: 768px) {
+             //width: calc((100%/3) - 2*15px);
+             max-width: 226px;
+        }
+    
     @media scree and (min-width: 1200px) {
-                width: 170px;
-              
+                max-width: 170px;
             }
 }
 
-
 .clients-card__link {
-
 
     width: 100%;
     height: 100%;

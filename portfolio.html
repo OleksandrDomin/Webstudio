@@ -211,13 +211,14 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-block">
-        <div>
+      <div class="footer__thumb container">
+        <div class="footer-block">
+          <div class="footer__address">
               <a class="logo" href="./index.html">Web<span class="logo 
               logo--white">Studio</span>
               </a>
               <address class="address">
-        <ul class="address__list">
+        <ul class="address__list list">
           <li class="address-map address__item">
             <a
               class="link address-map__link"
@@ -227,17 +228,17 @@
             </a>
           </li>
           <li class="address-mail address__item">
-            <a class="link info__link footer__address--font" href="mailto:info@devstudio.com"
+            <a class="link address-mail__link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li class="address__tel">
-            <a class="link info__link footer__address--font" href="tel:+380961111111"
+            <a class="link address-tel__link" href="tel:+380961111111"
               >+38 096 111 11 11</a
-            >
+            > 
           </li>
         </ul>
-              </address>
+          </address>
         </div>
         <div class="footer__social social-network">
           <h3 class="footer-title">приєднуйтесь</h3>
@@ -272,10 +273,13 @@
             </li>
           </ul>
         </div>
+        </div>
         <div class="footer__subscribe">
         <h3 class="footer-title">Підпишіться на розсилку</h3>
+        <div class="subscribe">
           <form class="subscribe-form" autocomplete="on">
-          <input class="subscribe-form__area" type="email" name="email" placeholder="Email" required>
+            <input class="subscribe-form__area" type="email" name="email" placeholder="Email" required>
+          </form>
           <button class="button subscribe-form__button flex-centr" type="button">
           Підписатися
           <svg class="button__icon button__icon--margin-left__12px" width="24" height="24">
@@ -283,7 +287,7 @@
             </use>
           </svg>
           </button>
-      </form>
+        </div> 
       </div>
       </div>
     </footer>
