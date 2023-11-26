@@ -18,4 +18,11 @@
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
   "liveServer.settings.port": 888
+
 }
+
+
+
+  // "cSpell.words": [
+  //   "Перемикач"
+  // ]
